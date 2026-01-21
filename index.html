@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Swanand Joshi | Software Developer Portfolio</title>
+
+    <meta name="description" content="Swanand Joshi - Computer Engineering student specializing in Python, Flask, Web Development, Pandas, NumPy, and Data Structures.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">Swanand<span class="accent">.</span></a>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <h1>Hi, I'm <span class="accent">Swanand Joshi</span></h1>
+
+            <h2 class="typing-text">
+                <span class="typed-text"></span><span class="cursor"></span>
+            </h2>
+
+            <p class="tagline">
+                Computer Engineering student specializing in Python, Flask, Web Development,
+                Pandas, NumPy, and Data Structures.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+
+                <!-- IMPORTANT: resume file name must match exactly -->
+                <a href="./Swanand_Resume.pdf" download class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/swanandjoshi30" target="_blank" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/swanand-joshi1212" target="_blank" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:swanandofficial@gmail.com" data-tooltip="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://leetcode.com/u/Swanand_Joshi/" target="_blank" data-tooltip="LeetCode">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title fade-in">About Me</h2>
+
+        <div class="about-content fade-in">
+            <div class="about-text">
+                <p>
+                    My name is <strong>Swanand Joshi</strong>, a Computer Engineering student pursuing
+                    Honors in Artificial Intelligence and Machine Learning.
+                </p>
+                <p>
+                    I enjoy building real-world software using Python, Flask, and web technologies,
+                    and I focus on writing clean, efficient, and scalable code.
+                </p>
+                <p>
+                    I am self-motivated, a quick learner, and actively strengthening my problem-solving
+                    skills through Data Structures and Algorithms.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title fade-in">Technical Skills</h2>
+
+        <div class="skills-grid fade-in">
+            <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
+            <div class="skill-card"><i class="fas fa-chart-line"></i><h3>Pandas</h3></div>
+            <div class="skill-card"><i class="fas fa-chart-area"></i><h3>NumPy</h3></div>
+            <div class="skill-card"><i class="fas fa-flask"></i><h3>Flask</h3></div>
+            <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3></div>
+            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML & CSS</h3></div>
+            <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
+            <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git & GitHub</h3></div>
+            <div class="skill-card"><i class="fas fa-code"></i><h3>DSA & OOPs</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title fade-in">Projects</h2>
+
+        <div class="projects-grid fade-in">
+
+            <div class="project-card">
+                <h3>Voice Assistant Using Python</h3>
+                <p>
+                    Built a Python-based voice assistant supporting 10+ commands including weather,
+                    Wikipedia search, news headlines, jokes, and web navigation using Flask and REST APIs.
+                </p>
+                <p><strong>Tech:</strong> Python, Flask, HTML, CSS, JavaScript, REST APIs</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Version Guard – Config Tracker CLI</h3>
+                <p>
+                    Developed a Python CLI tool to track real-time configuration changes across 6+ file types
+                    with colored side-by-side diffs and change history tracking.
+                </p>
+                <p><strong>Tech:</strong> Python, Watchdog, Rich, DiffLib</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="container">
+        <h2 class="section-title fade-in">Education</h2>
+        <p class="fade-in">
+            <strong>B.E. Computer Engineering (Honors in AI & ML)</strong><br>
+            Modern Education Society’s Wadia College of Engineering, Pune
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title fade-in">Contact</h2>
+
+        <div class="contact-info fade-in">
+            <p><i class="fas fa-envelope"></i> swanandofficial@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 7709636474</p>
+            <p><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Swanand Joshi. All rights reserved.</p>
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
