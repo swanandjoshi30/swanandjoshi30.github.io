@@ -80,3 +80,6 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+document.querySelector('.logo-link').addEventListener('click', (e) => {
+    e.preventDefault();
+});
