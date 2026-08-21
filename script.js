@@ -9,9 +9,20 @@ hamburger.addEventListener('click', () => {
 });
 
 navLinks.forEach(link =>
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+
+        const targetId = link.getAttribute('href').slice(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // remove the #hash from the URL instead of pushing it
+        history.replaceState(null, '', window.location.pathname + window.location.search);
     })
 );
 
@@ -82,4 +93,20 @@ backToTop.addEventListener('click', () => {
 });
 document.querySelector('.logo-link').addEventListener('click', (e) => {
     e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+});
+
+// ANY OTHER IN-PAGE ANCHOR LINKS (e.g. hero "Get In Touch" button)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    if (link.classList.contains('nav-link') || link.classList.contains('logo-link')) return;
+    link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href').slice(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            e.preventDefault();
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+    });
 });
